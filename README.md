@@ -14,6 +14,7 @@
 
 ## Структура проекта
 
+```
 Shift/
 ├─ build/                 # Gradle билд
 ├─ src/main/java/filter/   # исходный код
@@ -25,6 +26,7 @@ Shift/
 ├─ build.gradle.kts
 ├─ settings.gradle.kts
 └─ .gitignore
+```
 
 - Входные файлы (`in1.txt`, `in2.txt`) можно создавать в **корне проекта**.  
 - Выходные файлы создаются рядом с JAR или в указанной папке с помощью `-o`.
@@ -47,7 +49,7 @@ gradlew clean build
 
 ```bash
 java -jar build/libs/shift-1.0.0.jar [опции] <файлы>
-```bash
+```
 
 ##Опции
 
@@ -64,17 +66,17 @@ java -jar build/libs/shift-1.0.0.jar [опции] <файлы>
 ###1. Краткая статистика, файлы в текущей папке:
 ```bash
 java -jar build/libs/shift-1.0.0.jar -s in1.txt in2.txt
-```bash
+```
 
 ###2. Полная статистика с добавлением и префиксом:
 ```bash
 java -jar build/libs/shift-1.0.0.jar -f -a -p sample- in1.txt in2.txt
-```bash
+```
 
 ###3. Указание папки для выходных файлов:
 ```bash
 java -jar build/libs/shift-1.0.0.jar -s -o output in1.txt
-```bash
+```
 
 ###Результат: файлы integers.txt, floats.txt, strings.txt (или с префиксом) создаются в папке output.
 
