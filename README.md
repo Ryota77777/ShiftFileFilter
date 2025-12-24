@@ -39,7 +39,7 @@ Shift/
 git clone https://github.com/Ryota77777/ShiftFileFilter.git
 cd ShiftFileFilter
 gradlew clean build
-```bash
+```
 
 #Запуск программы
 
